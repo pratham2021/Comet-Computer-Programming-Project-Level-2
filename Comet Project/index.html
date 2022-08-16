@@ -16,93 +16,257 @@
         </div>
     </nav>
     
-    <div class="cards">
-        <button class="button" data-modal-target="#modal">
-            <div class="card card1">
-                <img src="/imgs/berkeley.jpg">
-                <div class="details">
-                    <h3>University of California Berkeley</h3>
-                    <h>Berkeley, California</h>
-                    <p>In State: $14,312, Out-of-state: $44,066</p>
-                </div>
-            </div>
-        </button>
-        
-        <button class="button" data-modal-target="#modal">
-            <div class="card card2">
-                <img src="/imgs/davis.jpg">
-                <div class="details">
-                    <h3>University of California Davis</h3>
-                    <h>Davis, California</h>
-                    <p>In State: $14,597, Out-of-state: $44,351</p>
-                </div>
-            </div>
-        </button>
-
-        <button class="button" data-modal-target="#modal">
-            <div class="card card3">
-                <img src="/imgs/irvine.jpg">
-                <div class="details">
-                    <h3>University of California Irvine</h3>
-                    <h>Irvine, California</h>
-                    <p>In State: $13,753, Out-of-state: $43,507</p>
-                </div>
-            </div>
-        </button>
-
-        <button class="button" data-modal-target="#modal">
-            <div class="card card4">
-                <img src="/imgs/ucla.jpg">
-                <div class="details">
-                    <h3>University of California Los Angeles</h3>
-                    <h>Los Angeles, California</h>
-                    <p>In State: $13,249, Out-of-state: $43,003</p>
-                </div>
-            </div>
-        </button>
-
-        <button class="button" data-modal-target="#modal">
-            <div class="card card5">
-                <img src="/imgs/ucsandiego.jpg">
-                <div class="details">
-                    <h3>University of California San Diego</h3>
-                    <h>San Diego, California</h>
-                    <p>In State: $14,648, Out-of-state: $44,402</p>
-                </div>
-            </div>
-        </button>
-
-        <button class="button" data-modal-target="#modal">
-            <div class="card card6">
-                <img src="/imgs/usc.jpg">
-                <div class="details">
-                    <h3>University of Southern California</h3>
-                    <h>Los Angeles, California</h>
-                    <p>Tuition: $60,275</p>
-                </div>
-            </div> 
-        </button>
-
-        <button class="button" data-modal-target="#modal">
-            <div class="card card7">
-                <img src="/imgs/stanford.jpg">
-                <div class="details">
-                    <h3>Stanford University</h3>
-                    <h>Stanford, California</h>
-                    <p>Tuition: $56,169</p>
-                </div>
-            </div> 
-        </button>
-
-        <div class="modal" id="modal">
-            <div class="modal-header">
-                <div class="title">Example Modal</div>
-                <button data-close-button class="close-button">&times;</button>
-            </div>
-            <div class="modal-body">
+    
+    <button class="button" data-modal-target="#modal" id="berkeley">
+        <div class="card card1">
+            <img src="/imgs/berkeley.jpg">
+            <div class="details">
+                <h3>University of California Berkeley</h3>
+                <h>Berkeley, California</h>
+                <p>In State: $14,312, Out-of-state: $44,066</p>
             </div>
         </div>
-        <div id="overlay"></div>
+    </button>
+    <br>
+    <button class="button" data-modal-target="#modal_1" id="davis">
+        <div class="card card2">
+            <img src="/imgs/davis.jpg">
+            <div class="details">
+                <h3>University of California Davis</h3>
+                <h>Davis, California</h>
+                <p>In State: $14,597, Out-of-state: $44,351</p>
+            </div>
+        </div>
+    </button>
+    <br>
+    <button class="button" data-modal-target="#modal_2" id="irvine">
+        <div class="card card3">
+            <img src="/imgs/irvine.jpg">
+            <div class="details">
+                <h3>University of California Irvine</h3>
+                <h>Irvine, California</h>
+                <p>In State: $13,753, Out-of-state: $43,507</p>
+            </div>
+        </div>
+    </button>
+    <br>
+    <button class="button" data-modal-target="#modal_3" id="ucla">
+        <div class="card card4">
+            <img src="/imgs/ucla.jpg">
+            <div class="details">
+                <h3>University of California Los Angeles</h3>
+                <h>Los Angeles, California</h>
+                <p>In State: $13,249, Out-of-state: $43,003</p>
+            </div>
+        </div>
+    </button>
+    <br>
+    <button class="button" data-modal-target="#modal_4" id="ucsandiego">
+        <div class="card card5">
+            <img src="/imgs/ucsandiego.jpg">
+            <div class="details">
+                <h3>University of California San Diego</h3>
+                <h>San Diego, California</h>
+                <p>In State: $14,648, Out-of-state: $44,402</p>
+            </div>
+        </div>
+    </button>
+    <br>
+    <button class="button" data-modal-target="#modal_5" id="usc">
+        <div class="card card6">
+            <img src="/imgs/usc.jpg">
+            <div class="details">
+                <h3>University of Southern California</h3>
+                <h>Los Angeles, California</h>
+                <p>Tuition: $60,275</p>
+            </div>
+        </div> 
+    </button>
+    <br>
+    <button class="button" data-modal-target="#modal_6" id="stanford">
+        <div class="card card7">
+            <img src="/imgs/stanford.jpg">
+            <div class="details">
+                <h3>Stanford University</h3>
+                <h>Stanford, California</h>
+                <p>Tuition: $56,169</p>
+            </div>
+        </div> 
+    </button>
+
+    <div class="modal" id="modal">
+        <img src="/imgs/berkeley.jpg">
+        <div class="modal-header">
+            <div class="title">University of California Berkeley</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="details">
+            <h2>Located in Berkeley, California</h2>
+        </div>
+        <div class="details">
+            <h4>Top 3 Majors:</h4>
+            <h4>Computer Science</h4>
+            <h4>Cell/Cellular and Molecular Biology</h4>
+            <h4>Economics</h4>
+        </div>
+        <div class="details">
+            <h1>Student Size: 45,057 (2021)</h1>
+            <h1>Campus Size: 1,232 acres</h1>
+        </div>
+        <div class="modal-body">
+            <p>University of California Berkeley is a public university that was established in 1868. UC Berkeley has fourteen schools and colleges and offers over 350 degree programs.</p>
+        </div>
     </div>
+    <div id="overlay"></div>
+
+    <div class="modal" id="modal_1">
+        <img src="/imgs/davis.jpg">
+        <div class="modal-header">
+            <div class="title">University of California Davis</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="details">
+            <h2>Located in Davis, California</h2>
+        </div>
+        <div class="details">
+            <h4>Top 3 Majors:</h4>
+            <h4>Computer Science</h4>
+            <h4>Managerial Economics</h4>
+            <h4>Animal Science</h4>
+        </div>
+        <div class="details">
+            <h1>Student Size: 35,186 (2016)</h1>
+            <h1>Campus Size: 5,300 acres</h1>
+        </div>
+        <div class="modal-body">
+            <p>University of California Davis is a public university that was established in 1959. It was originally an agricultural campus. It is named a Public Ivy.</p>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+    <div class="modal" id="modal_2">
+        <img src="/imgs/irvine.jpg">
+        <div class="modal-header">
+            <div class="title">University of California Irvine</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="details">
+            <h2>Located in Irvine, California</h2>
+        </div>
+        <div class="details">
+            <h4>Top 3 Majors:</h4>
+            <h4>Political Science</h4>
+            <h4>Managerial Economics</h4>
+            <h4>Public Health</h4>
+        </div>
+        <div class="details">
+            <h1>Student Size: 33,467 (2016)</h1>
+            <h1>Campus Size: 1,475 acres</h1>
+        </div>
+        <div class="modal-body">
+            <p>University of California Irvine is a public university that was established in 1965. UC Irvine offers 87 undergraduate degrees and 129 graduate and professional degrees.</p>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+    <div class="modal" id="modal_3">
+        <img src="/imgs/ucla.jpg">
+        <div class="modal-header">
+            <div class="title">University of California Los Angeles</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="details">
+            <h2>Located in Los Angeles, California</h2>
+        </div>
+        <div class="details">
+            <h4>Top 3 Majors:</h4>
+            <h4>Film and Television</h4>
+            <h4>Business Economics</h4>
+            <h4>Political Science</h4>
+        </div>
+        <div class="details">
+            <h1>Student Size: 44,947 (2016)</h1>
+            <h1>Campus Size: 419 acres</h1>
+        </div>
+        <div class="modal-body">
+            <p>University of California Los Angeles is a public university that was established in 1919. It offers 337 undergraduate programs and graduate degree programs.</p>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+    <div class="modal" id="modal_4">
+        <img src="/imgs/ucsandiego.jpg">
+        <div class="modal-header">
+            <div class="title">University of California San Diego</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="details">
+            <h2>Located in San Diego, California</h2>
+        </div>
+        <div class="details">
+            <h4>Top 3 Majors:</h4>
+            <h4>Biology/Biological Sciences</h4>
+            <h4>Computer Science</h4>
+            <h4>International Studies</h4>
+        </div>
+        <div class="details">
+            <h1>Student Size: 35,821 (2016)</h1>
+            <h1>Campus Size: 1,976 acres</h1>
+        </div>
+        <div class="modal-body">
+            <p>University of California Los Angeles is a public university that was established in 1960. It has twelve undergraduate, graduate and professional schools including seven undergraduate residential colleges.</p>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+    <div class="modal" id="modal_5">
+        <img src="/imgs/usc.jpg">
+        <div class="modal-header">
+            <div class="title">University of Southern California</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="details">
+            <h2>Located in Los Angeles, California</h2>
+        </div>
+        <div class="details">
+            <h4>Top 3 Majors:</h4>
+            <h4>Business</h4>
+            <h4>Communications</h4>
+            <h4>Biology</h4>
+        </div>
+        <div class="details">
+            <h1>Student Size: 44,000 (2016)</h1>
+            <h1>Campus Size: 229 acres</h1>
+        </div>
+        <div class="modal-body">
+            <p>University of Southern California is the oldest private university in California that was established in 1880.</p>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+    <div class="modal" id="modal_6">
+        <img src="/imgs/stanford.jpg">
+        <div class="modal-header">
+            <div class="title">Stanford University</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="details">
+            <h2>Located in Stanford, California</h2>
+        </div>
+        <div class="details">
+            <h4>Top 3 Majors:</h4>
+            <h4>Computer Science</h4>
+            <h4>Human Biology</h4>
+            <h4>Cognitive Science</h4>
+        </div>
+        <div class="details">
+            <h1>Student Size: 16,914 (2017)</h1>
+            <h1>Campus Size: 8,180 acres</h1>
+        </div>
+        <div class="modal-body">
+            <p>Stanford University is a private university that occupies 8180 acres and enrolls 17000 students</p>
+        </div>
+    </div>
+    <div id="overlay"></div>
 </body>
 </html>

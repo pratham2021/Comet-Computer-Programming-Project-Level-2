@@ -46,6 +46,12 @@
 
 .modal-body{
     padding: 10px 15px;
+    font-size: 13px;
+}
+
+.modal-body>p{
+    padding: 5px 5px;
+    font-size: 13px;
 }
 
 #overlay{
@@ -73,13 +79,6 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minimax(400px,1fr));
-    padding: 20px;
-    grid-gap: 40px;
-}
-
 .card{
     background-color: #1c1b29;
     border-radius: 20px;
@@ -90,6 +89,10 @@ body{
     font-size:13px;
     position:relative;
     cursor:context-menu;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(400px,1fr));
+    padding: 20px;
+    grid-gap: 40px;
 }
 
 .button{
@@ -140,6 +143,27 @@ img{
     font-size: 15px;
     line-height: 30px;
     font-weight: 400;
+}
+
+.details>h4{
+    color:#000000;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 10px 0 15px 0;
+}
+
+.details>h2{
+    color:#000000;
+    font-weight: 600;
+    font-size: 12px;
+    margin: 5px 0 5px 0;
+}
+
+.details>h1{
+    color:#000000;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 5px 0 5px 0;
 }
 
 .details>a{
